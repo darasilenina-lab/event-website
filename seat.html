@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Праздник в каждый дом | Выбор зоны</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #ffcc00;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+                /* Увеличим размер шрифта логотипа */
+        .logo {
+            font-size: 24px;   /* Увеличим размер шрифта логотипа */
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Блок схемы локации */
+        #seating-map {
+            text-align: center;
+        }
+
+        #seating-map img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">Праздник в каждый дом</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основная часть -->
+    <main>
+        <h1>Выбор зоны</h1>
+        <section id="seating-map">
+            <img src="images/seating.png" alt="Схема размещения зон">
+            <p>Цена: от 1000 руб./час</p>
+            <a href="booking.html">Продолжить бронирование</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © Праздник в каждый дом 2025
+    </footer>
+</body>
+</html>

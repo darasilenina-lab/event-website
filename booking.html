@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Праздник в каждый дом | Бронирование</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #ffcc00;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            /* Увеличим размер шрифта логотипа */
+        .logo {
+            font-size: 24px;   /* Увеличим размер шрифта логотипа */
+            font-weight: bold;
+            color: #fff;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+
+        /* Контактная форма */
+        fieldset {
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        /* Итоговая стоимость */
+        #total-cost {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">Праздник в каждый дом</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основная часть -->
+    <main>
+        <h1>Бронирование</h1>
+        <section id="order-data">
+            <h2>Информация о вашем заказе</h2>
+            <dl>
+                <dt>Регион:</dt>
+                <dd>Москва</dd>
+                <dt>Адрес локации:</dt>
+                <dd>ул. Новаторов, 1</dd>
+                <dt>Дата мероприятия:</dt>
+                <dd>2025-12-31</dd>
+                <dt>Количество человек:</dt>
+                <dd>20 взрослых, 10 детей</dd>
+                <dt>Стоимость:</dt>
+                <dd>10000 рублей</dd>
+            </dl>
+        </section>
+
+        <section id="additional-services">
+            <h2>Дополнительные услуги</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Организация питания</legend>
+                    <input type="checkbox" id="food-service"><label for="food-service">Заказать питание</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Услуги аниматора</legend>
+                    <input type="checkbox" id="animator-service"><label for="animator-service">Нужен аниматор?</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Услуги ведущего</legend>
+                    <input type="checkbox" id="host-service"><label for="host-service">Запланируйте ведущего</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Услуги детского такси</legend>
+                    <input type="checkbox" id="taxi-service"><label for="taxi-service">Требуется трансфер</label>
+                </fieldset>
+            </form>
+
+            <textarea rows="4" cols="50" placeholder="Комментарии к вашему заказу"></textarea>
+        </section>
+
+        <section id="total-cost">
+            <h2>Итого сумма к оплате</h2>
+            <span>10000 рублей</span>
+        </section>
+
+        <form action="#" method="POST">
+            <input type="email" placeholder="E-Mail для подтверждения заказа">
+            <button type="submit">Оформить бронь</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © Праздник в каждый дом 2025
+    </footer>
+</body>
+</html>

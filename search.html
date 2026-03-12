@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Праздник в каждый дом | Поиск локаций</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #ffcc00;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+                /* Увеличим размер шрифта логотипа */
+        .logo {
+            font-size: 24px;   /* Увеличим размер шрифта логотипа */
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+
+        /* Таблица результатов поиска */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">Праздник в каждый дом</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search.html">Поиск</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основная часть -->
+    <main>
+        <h1>Результаты поиска</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Регион</th>
+                    <th>Адрес локации</th>
+                    <th>Дата мероприятия</th>
+                    <th>Свободные зоны</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Москва</td>
+                    <td>ул. Новаторов, 1</td>
+                    <td>2025-12-31</td>
+                    <td>5</td>
+                </tr>
+                <!-- Можно добавить ещё строки -->
+            </tbody>
+        </table>
+        <a href="seat.html">Выбрать зону</a>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © Праздник в каждый дом 2025
+    </footer>
+</body>
+</html>

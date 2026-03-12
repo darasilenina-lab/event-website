@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Праздник в каждый дом | Главная</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #ffcc00;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            /* Увеличим размер шрифта логотипа */
+        .logo {
+            font-size: 24px;   /* Увеличим размер шрифта логотипа */
+            font-weight: bold;
+            color: #fff;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+
+        /* Футер */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Блоки на главной странице */
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* Блок "О компании" */
+        #company-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Блок "Алгоритм бронирования" */
+        #booking-algorithm ol {
+            counter-reset: step-number;
+            list-style-type: decimal;
+            padding-left: 1.5em;
+        }
+
+        #booking-algorithm ol li::before {
+            content: counter(step-number) ". ";
+            counter-increment: step-number;
+            font-weight: bold;
+        }
+
+        /* Блок поиска */
+        #search-form label {
+            display: block;
+            margin-top: 0.5em;
+        }
+
+        #search-form input[type="text"],
+        #search-form input[type="date"] {
+        /*изменение длины в строке ввода, блок поиск мероприятий*/
+            width: 40%; 
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        #search-form button {
+            background-color: #ffcc00;
+            color: white;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+
+        /* Блок акционные предложения */
+        .action-item img {
+            max-width: 100px;
+            height: auto;
+        }
+        /* Блок подписки */
+        #subscribe form {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">Праздник в каждый дом</div>
+        <nav>
+            <ul>
+                <li><a href="#actions">Акции</a></li>
+                <li><a href="#search">Поиск</a></li>
+                <li><a href="#booking">Управление бронированием</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основная часть -->
+    <main>
+        <section id="company-info">
+            <h2>О нашей компании</h2>
+            <p>Мы организуем яркие детские праздники!</p>
+        </section>
+
+        <section id="booking-algorithm">
+            <h2>Алгоритм бронирования</h2>
+            <ol>
+                <li>Выберите дату мероприятия</li>
+                <li>Выберите количество участников</li>
+                <li>Выберите удобную локацию</li>
+                <li>Оформите заказ</li>
+            </ol>
+        </section>
+
+        <section id="search">
+            <h2>Поиск мероприятий</h2>
+            <form action="#" method="GET" id="search-form">
+                <label for="region">Регион:</label>
+                <input type="text" id="region" placeholder="Москва">
+                <br/>
+                <label for="event-date">Дата мероприятия:</label>
+                <input type="date" id="event-date">
+                <br/>
+                <button type="submit">Искать</button>
+            </form>
+        </section>
+
+        <section id="actions">
+            <h2>Акции</h2>
+            <div class="action-item">
+                <img src="images/action1.jpg" alt="акция 1">
+                <h3>Скидка 10% на аренду зала</h3>
+                <p>При бронировании двух праздничных дат подряд.</p>
+                <a href="#full-action-details">Подробнее</a>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <h2>Получайте эксклюзивные предложения</h2>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Ваш E-Mail">
+                <button type="submit">Подписаться</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © Праздник в каждый дом 2025
+    </footer>
+</body>
+</html>
